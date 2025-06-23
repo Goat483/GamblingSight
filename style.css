@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0a0a0a;
+  color: #f0f0f0;
+  font-family: 'JetBrains Mono', monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  padding: 80px 60px;
+  border: 2px solid #1a1a1a;
+  background-color: #121212;
+  border-radius: 12px;
+  max-width: 1000px;
+  width: 95%;
+  box-shadow: 0 0 20px rgba(255, 204, 0, 0.08);
+  transition: all 0.3s ease;
+  margin-top: 60px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #ffcc00;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+p {
+  font-size: 1rem;
+  color: #999;
+  margin-bottom: 40px;
+}
+
+button {
+  background-color: transparent;
+  border: 2px solid #ffcc00;
+  color: #ffcc00;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #ffcc00;
+  color: #000;
+  box-shadow: 0 0 15px #ffcc00;
+}
+
+.scroll-anchor {
+  height: 10px;
+}
+
+.dollar-section {
+  display: flex;
+  flex-direction: row;
+  background-color: #10140c;
+  color: #f0f0f0;
+  padding: 100px 40px;
+  min-height: 100vh;
+  position: relative;
+}
+
+.sticky-image {
+  position: sticky;
+  top: 40px;
+  align-self: flex-start;
+  flex: 0 0 250px;
+  margin-right: 40px;
+}
+
+.sticky-image img {
+  width: 100%;
+  height:200%;
+  box-shadow: 0 0 20px rgba(255, 204, 0, 0.2);
+  border-radius: 8px;
+}
+
+.dollar-section .content {
+  max-width: 600px;
+}
+
+.dollar-section h2 {
+  font-size: 2.5rem;
+  color: #ffcc00;
+  margin-bottom: 20px;
+}
+
+.dollar-section p {
+  font-size: 1.1rem;
+  color: #ddd;
+}
+.sticky-bg {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background-image: url("money-stack.png");
+  background-repeat: repeat-y;
+  background-size: contain;
+  background-position: top center;
+  flex-shrink: 0;
+  margin-right: 40px;
+}
