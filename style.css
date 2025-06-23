@@ -141,7 +141,6 @@ button:hover {
   color: #fff;
 }
 
-/* The actual notch */
 .navbar::after {
   content: "";
   position: absolute;
