@@ -99,10 +99,14 @@ body {
 
 .more-info {
   max-width: 800px;
+  height: 900px;
   margin: 60px auto;
   padding: 60px 20px;
   background-color: #0f0f0f;
   border: 2px dashed #ffcc00;
   border-radius: 10px;
   text-align: center;
+}
+html {
+  scroll-behavior: smooth;
 }
