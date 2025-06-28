@@ -187,3 +187,7 @@ html {
   margin: 0;
   cursor: pointer;
 }
+
+.input-length {
+  text-align: justify;
+}
