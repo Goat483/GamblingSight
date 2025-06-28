@@ -195,6 +195,41 @@ html {
 .rules-check label {
   display: flex;
   align-items: center;
-  gap: 8px; /* space between checkbox and text */
-  white-space: nowrap; /* prevent text wrapping */
+  gap: 8px; 
+  white-space: nowrap; 
+}
+.submit-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ffcc00;
+  color: #000;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+  align-self: flex-end; 
+  margin-left: auto;
+}
+
+.submit-button:hover {
+  background-color: #e6b800;
+}
+
+.challenges-display {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 40px 20px;
+  background-color: #1a1a1a;
+  border: 2px dashed #ffcc00;
+  border-radius: 10px;
+  color: #ffcc00;
+}
+
+.challenge-box {
+  border: 2px solid #ffcc00;
+  padding: 20px;
+  margin: 15px 0;
+  background-color: #111;
+  border-radius: 8px;
 }

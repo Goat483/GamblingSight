@@ -26,28 +26,31 @@
   <section class="about">
     <h2>LOSE ALL YOUR MONEY</h2>
     <p>OR WIN MORE!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
-  </section>
-  <section id="more" class="more-info">
-    <h2>Challenges</h2>
-  </section>
+    <section class="challenges-display">
+      <h2>Challenges</h2>
+      <div id="challengeList"></div>
+    </section>
 
-  <section id="challenge-section"class="challenge-section">
+  <section class="challenge-section">
     <h2>Create a Challenge</h2>
-    <form class="challenge-form">
-        <label for="amount">Amount:</label>
-        <input type="text" id="amount" name="amount" />
-      
-        <label for="odds">Odds:</label>
-        <input type="text" id="odds" name="odds" />
-      
-        <div class="rules-check">
-            <label for="rulesCheck">
-              <input type="checkbox" id="rulesCheck" name="rulesCheck"  />
-              <span>I have read and understand the rules.</span>
-            </label>
-          </div>
-      </form>
+    <form class="challenge-form" id="challengeForm">
+      <label for="amount">Amount:</label>
+      <input type="text" id="amount" name="amount" required />
+  
+      <label for="odds">Odds:</label>
+      <input type="text" id="odds" name="odds" required />
+  
+      <div class="rules-check">
+        <label>
+          <input type="checkbox" id="rulesCheck" name="rulesCheck" />
+          <span>I have read and understand the rules</span>
+        </label>
+      </div>
+  
+      <button type="submit" class="submit-button">Create Challenge</button>
+    </form>
   </section>
+  
   <section class="rules-section">
     <h2>Rules</h2>
     <ul>
@@ -58,6 +61,39 @@
       <li>Responsible gambling is encouraged</li>
     </ul>
   </section>
+  <script>
+    const form = document.getElementById('challengeForm');
+    const challengeList = document.getElementById('challengeList');
   
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+  
+      const amount = document.getElementById('amount').value.trim();
+      const odds = document.getElementById('odds').value.trim();
+      const rulesChecked = document.getElementById('rulesCheck').checked;
+  
+      if (!rulesChecked) {
+        alert("You must agree to the rules before creating a challenge.");
+        return;
+      }
+  
+      if (amount === '' || odds === '') {
+        alert("Please fill in both fields.");
+        return;
+      }
+  
+      const challengeBox = document.createElement('div');
+      challengeBox.className = 'challenge-box';
+      challengeBox.innerHTML = `
+        <strong>💸 Challenge Created</strong><br />
+        Amount: <span>${amount}</span><br />
+        Odds: <span>${odds}</span>
+      `;
+  
+      challengeList.appendChild(challengeBox);
+  
+      form.reset();
+    });
+  </script>
   </body>
   </html>
