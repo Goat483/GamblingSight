@@ -190,4 +190,11 @@ html {
 
 .input-length {
   text-align: justify;
+  display: inline;
+}
+.rules-check label {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* space between checkbox and text */
+  white-space: nowrap; /* prevent text wrapping */
 }
