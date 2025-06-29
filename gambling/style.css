@@ -60,6 +60,7 @@ body {
   padding: 100px 20px 60px;
   background-color: #1a1a1a;
   border-bottom: 2px solid #ffcc00;
+  position: relative;
 }
 
 .hero h1 {
@@ -241,13 +242,15 @@ body {
     url('pillar.png') right top repeat-y;
   background-color: #0a0a0a; 
   background-attachment: scroll;
-  background-size: auto 314px; 
+  background-size: auto 314px;
+  height:100px; 
   margin: 0;
   padding: 0;
 }
 body2 {
   margin: 0;
   padding: 0;
+  height: 100px;
   background-color: #0a0a0a;
   background-image:
     url('images/06d1d44c-ad3e-4fd4-b62e-517fd384a8c9.png'),
@@ -312,11 +315,11 @@ body .fade-bottom {
 
 .inner-fade-left {
   left: 185px;
-  background: linear-gradient(to left, rgba(10, 10, 10, 0.6), transparent);
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.6), transparent);
 }
 
 
 .inner-fade-right {
   right: 185px;
-  background: linear-gradient(to right, rgba(10, 10, 10, 0.6), transparent);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), transparent);
 }
