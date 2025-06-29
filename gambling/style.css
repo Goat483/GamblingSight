@@ -205,6 +205,7 @@ html {
   color: #000;
   border: none;
   font-weight: bold;
+  font-size: 18px;
   cursor: pointer;
   border-radius: 4px;
   transition: background-color 0.2s;
@@ -233,4 +234,89 @@ html {
   margin: 15px 0;
   background-color: #111;
   border-radius: 8px;
+}
+body {
+  background: 
+    url('pillar.png') left top repeat-y,
+    url('pillar.png') right top repeat-y;
+  background-color: #0a0a0a; 
+  background-attachment: scroll;
+  background-size: auto 314px; 
+  margin: 0;
+  padding: 0;
+}
+body2 {
+  margin: 0;
+  padding: 0;
+  background-color: #0a0a0a;
+  background-image:
+    url('images/06d1d44c-ad3e-4fd4-b62e-517fd384a8c9.png'),
+    url('images/06d1d44c-ad3e-4fd4-b62e-517fd384a8c9.png');
+  background-repeat: repeat-y, repeat-y;
+  background-position: left top, right top;
+  background-size: 60px auto;
+  position: relative;
+}
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 30px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+body::before {
+  left: 0;
+  background: linear-gradient(to right, #0a0a0a, transparent);
+}
+
+body::after {
+  right: 0;
+  background: linear-gradient(to left, #0a0a0a, transparent);
+}
+body::marker,
+body::selection,
+body .fade-top,
+body .fade-bottom {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 30px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+body .fade-top {
+  top: 0;
+  background: linear-gradient(to bottom, #0a0a0a, transparent);
+}
+
+body .fade-bottom {
+  bottom: 0;
+  background: linear-gradient(to top, #0a0a0a, transparent);
+}
+.inner-fade-left,
+.inner-fade-right {
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.inner-fade-left {
+  left: 185px;
+  background: linear-gradient(to left, rgba(10, 10, 10, 0.6), transparent);
+}
+
+
+.inner-fade-right {
+  right: 185px;
+  background: linear-gradient(to right, rgba(10, 10, 10, 0.6), transparent);
 }
