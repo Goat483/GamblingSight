@@ -10,19 +10,16 @@
 <body>
   
 
-  <navigation class="navigationbar">
-    <ul class="navigation-links">
-      <li><a href="#">TYPE SHIT</a></li>
-      <li><a href="#">TYPE SHIT</a></li>
-      <li><a href="#">TYPE SHIT</a></li>
-      <li><a href="#">TYPE SHIT</a></li>
-    </ul>
-    <balanceButton>
-    <div>
-      <b>Balance:</b>
-    </div>
-  </balanceButton>
-  </navigation>
+    <nav class="navigationbar">
+        <div class="nav-left">
+          <a href="#">TYPE SHIT</a>
+          <a href="#">TYPE SHIT</a>
+          <a href="#">TYPE SHIT</a>
+        </div>
+        <div class="nav-right">
+            <button class="balance-button">Balance: $0</button>
+        </div>
+      </nav>
 
   <header class="hero">
     <h1>TYPE SHIT</h1>
@@ -72,39 +69,15 @@
       <li>Responsible gambling is encouraged</li>
     </ul>
   </section>
-  <script>
-    const form = document.getElementById('challengeForm');
-    const challengeList = document.getElementById('challengeList');
-  
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-  
-      const amount = document.getElementById('amount').value.trim();
-      const odds = document.getElementById('odds').value.trim();
-      const rulesChecked = document.getElementById('rulesCheck').checked;
-  
-      if (!rulesChecked) {
-        alert("You must agree to the rules before creating a challenge.");
-        return;
-      }
-  
-      if (amount === '' || odds === '') {
-        alert("Please fill in both fields.");
-        return;
-      }
-  
-      const challengeBox = document.createElement('div');
-      challengeBox.className = 'challenge-box';
-      challengeBox.innerHTML = `
-        <strong> Anonymous Challenge Created</strong><br />
-        Amount: <span>${amount}</span><br />
-        Odds: <span>${odds}</span>
-      `;
-  
-      challengeList.appendChild(challengeBox);
-  
-      form.reset();
-    });
-  </script>
+
+  <div id="balanceModal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>Add Balance</h2>
+        <p>This is where u will add funds type shit</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
   </body>
   </html>
