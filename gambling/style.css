@@ -79,7 +79,7 @@ body {
   padding: 12px 30px;
   font-weight: bold;
   border-radius: 30px;
-  transition: background-color 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .cta-button:hover {
@@ -218,6 +218,7 @@ html {
 
 .challenges-display {
   max-width: 800px;
+  height:800px;
   margin: 60px auto;
   padding: 40px 20px;
   background-color: #1a1a1a;
