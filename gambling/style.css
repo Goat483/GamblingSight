@@ -6,7 +6,7 @@ body {
   color: #ffcc00;
 }
 
-.navbar {
+.navigationbar {
   width: 100%;
   height: 80px;
   background-color: #0a0a0a;
@@ -19,15 +19,15 @@ body {
   box-shadow: 0 5px 10px rgba(255, 204, 0, 0.1);
 }
 
-.nav-links {
+.navigation-links {
   list-style: none;
   display: flex;
-  gap: 40px;
-  padding: 0;
-  margin: 0;
+  gap: 80px;
+  padding: 20px;
+  margin: 20px;
 }
 
-.nav-links li a {
+.navigation-links li a {
   text-decoration: none;
   color: #ffcc00;
   font-weight: bold;
@@ -35,32 +35,35 @@ body {
   transition: color 0.3s ease;
 }
 
-.nav-links li a:hover {
+.navigation-links li a:hover {
   color: white;
 }
 
-.navbar::after {
+.navigationbar::after {
   content: "";
   position: absolute;
-  bottom: -20px;
+  bottom: -30px;
   left: 50%;
   transform: translateX(-50%);
-  width: 60px;
+  width: 500px;
   height: 40px;
-  background-color: #0a0a0a;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
+  background-color: #1a1a1a;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
   border: 2px solid #ffcc00;
   border-bottom: none;
   z-index: 999;
 }
 
 .hero {
-  text-align: center;
-  padding: 100px 20px 60px;
+  max-width: 800px;
+  margin: 25px auto;
+  height: 200px;
+  padding: 40px;
   background-color: #1a1a1a;
-  border-bottom: 2px solid #ffcc00;
-  position: relative;
+  border: 2px solid #ffcc00;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .hero h1 {
@@ -322,4 +325,11 @@ body .fade-bottom {
 .inner-fade-right {
   right: 185px;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.6), transparent);
+}
+.balance-box{
+  
+
+}
+.balance-display{
+  
 }
