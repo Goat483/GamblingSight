@@ -78,6 +78,21 @@
       </div>
     </div>
     <script src="script.js"></script>
+    <div id="challengePopup" class="modal">
+        <div class="modal-content">
+          <span id="challengePopupClose" class="close-button">&times;</span>
+          <div id="challengePopupContent"></div>
+        </div>
+      </div>
+      <div id="acceptChallengeModal" class="modal">
+          <div class="modal-content">
+            <span id="acceptClose" class="close-button">&times;</span>
+            <h2>Accept Challenge</h2>
+            <p>Enter a number between <span id="minNum">1</span> and <span id="maxNum">X</span></p>
+            <input type="number" id="challengeGuess" min="1" />
+            <button id="submitGuess">Submit Guess</button>
+          </div>
+        </div>
 </body>
   </body>
   </html>

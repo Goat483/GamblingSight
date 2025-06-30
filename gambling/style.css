@@ -391,3 +391,22 @@ body .fade-bottom {
   color: #ffcc00;
   cursor: pointer;
 }
+#challengePopup .modal-content {
+  background: #222;
+  color: #ffd700;
+  border-radius: 12px;
+  text-align: center;
+  padding: 20px;
+}
+#acceptChallengeBtn {
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #fae900, #f8ea2b); /* green gradient */
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px rgba(34, 197, 94, 0.3);
+}
